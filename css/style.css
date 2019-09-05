@@ -113,7 +113,7 @@ button:focus {
 }
 
 .bg-overlay {
-    background-color: rgba(16, 16, 25, 0.7)!important;
+    background-color: rgba(16, 16, 25, 0.5)!important;
     position: absolute;
     top: 0;
     left: 0;
@@ -200,7 +200,7 @@ button:focus {
 
 .btn-dark-custom {
     color: #ffffff;
-    background-color: #323232 !important;
+    background-color: #1d998a !important;
 }
 
 .btn-dark-custom:hover,
@@ -696,7 +696,7 @@ button:focus {
 
 .portfolioFilter a:hover,
 .portfolioFilter a.current {
-    background-color: #323232;
+    background-color: #1d998b;
     color: #fff !important;
     border-radius: 3px;
 }
@@ -710,7 +710,7 @@ button:focus {
 }
 
 .gallary-title a {
-    color: #323232;
+    color: #1d998b;
 }
 
 
@@ -3449,4 +3449,13 @@ textarea.form-control {
     .business-carousel .carousel-inner {
         min-height: 600px;
     }
+}
+
+.imagen:hover {
+    filter: grayscale(100%);
+    transition:all .4s ease-in-out;
+}
+
+.turquesa{
+    color: #1d998b;
 }
