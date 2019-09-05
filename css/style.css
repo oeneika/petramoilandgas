@@ -558,6 +558,13 @@ button:focus {
     position: relative;
 }
 
+.agency-home-2 {
+    background: url(../images/background/bg-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
 .agency-home-title {
     font-size: 40px;
 }
