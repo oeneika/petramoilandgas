@@ -75,8 +75,8 @@ button:focus {
 *****************/
 
 .section {
-    padding-bottom: 110px;
-    padding-top: 110px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -487,7 +487,7 @@ button:focus {
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: #323232 !important;
+    color: #1d998b !important;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
@@ -907,7 +907,7 @@ textarea.form-control {
 /*------ AGENCY FOOTER ------*/
 
 .agency-bg-footer {
-    background-color: #1f1f1f;
+    background-color: #1d998b;
 }
 
 .footer-heading {
