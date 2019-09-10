@@ -38,7 +38,7 @@
 
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
@@ -77,7 +77,7 @@
     </nav>
     <!-- Navbar End -->
 
-    <section id="video-landing">
+    <section id="video-landing" class="d-none d-md-block">
         <video autoplay="autoplay" loop="loop" id="bgvid">
             <source src="http://taxify.co/wp-content/uploads/2014/06/file.mp4" type="video/mp4" /> 
         </video>
@@ -100,7 +100,32 @@
                     </div>
                 </div>
             </div>
-    </section><!-- #section -->
+    </section>
+
+    <!-- START AGENCY-HOME -->
+    <section class="section agency-home d-block d-md-none" id="home">
+        <div class="bg-overlay"></div>
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="agency-home-content text-center  text-white">
+                                <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">Awesome Agency Landing</p>
+                                <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">Multipurpose And Creative</h4>
+                                <p class="agency-home-desc f-15 mt-4 mx-auto line-height_1_8">Pleasure rationally encounter in consequences that are extremely painful again pursues loves desires obtain pain itself because pain.</p>
+                                <div class="mt-5">
+                                    <a href="#" class="btn btn-custom">Contact Us</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END AGENCY-HOME -->
 
     <!-- START ABOUT -->
     <section class="section" id="about">
