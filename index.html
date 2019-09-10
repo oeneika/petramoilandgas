@@ -12,6 +12,7 @@
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -44,8 +45,8 @@
         <div class="container">
             <!-- LOGO -->
             <a class="navbar-brand logo text-uppercase" href="index.html">
-                    <img src="images/isotipo-blanco.png" class="logo-light" alt="" height=50">
-                    <img src="images/Asset8.png" class="logo-dark" alt="" height="50">
+                    <img src="images/isotipo-blanco.png" class="logo-light" alt="" height=40">
+                    <img src="images/Asset8.png" class="logo-dark" alt="" height="40">
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
@@ -76,86 +77,30 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- START GYM-HOME -->
-    <section class="interior-home" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" style="background-image:url('images/works/wallpaper1.jpg');">
-                            <div class="home-center">
-                                <div class="home-desc-center">
-                                    <div class="bg-overlay"></div>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="gym-home-content text-center text-white">
-                                                    <h4 class="gym-home-subtitle text-uppercase letter-spacing_2">Petram Oil & Gas</h4>
-                                                    <h4 class="gym-home-title text-uppercase mt-4 letter-spacing_6">We provide comprehensive </h4>
-                                                    <p class="startup-home-desc f-16 mt-4 mx-auto mb-0">enhanced oil recovery solutions</p>
-
-                                                    <div class="mt-4 pt-3">
-                                                        <a href="#contact" class="btn btn-md btn-custom mt-3 mr-3">Contact us Now</a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
+    <section id="video-landing">
+        <video autoplay="autoplay" loop="loop" id="bgvid">
+            <source src="http://taxify.co/wp-content/uploads/2014/06/file.mp4" type="video/mp4" /> 
+        </video>
+        <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="agency-home-content text-center  text-white">
+                                    <p class="agency-home-sub-title text-uppercase f-14 letter-spacing_4">Petram Oil & Gas</p>
+                                    <h4 class="agency-home-title text-uppercase mt-4 letter-spacing_6">We provide comprehensive</h4>
+                                    <p class="agency-home-desc f-15 mt-4 mx-auto line-height_1_8">enhanced oil recovery solutions</p>
+                                    <div class="mt-5">
+                                        <a href="#" class="btn btn-custom">Contact Us</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image:url('images/works/wallpaper5.jpg');">
-                            <div class="home-center">
-                                <div class="home-desc-center">
-                                    <div class="bg-overlay"></div>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="gym-home-content text-center text-white">
-                                                    <h4 class="gym-home-subtitle text-uppercase letter-spacing_2">Petram Oil & Gas</h4>
-                                                    <h4 class="gym-home-title text-uppercase mt-4 letter-spacing_6">Shape Yourself</h4>
-                                                    <p class="startup-home-desc f-16 mt-4 mx-auto mb-0">Pleasure rationally encounter in consequences that are extremely painful again pursues loves desires obtain because pain.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image:url('images/works/wallpaper7.jpg');">
-                            <div class="home-center">
-                                <div class="home-desc-center">
-                                    <div class="bg-overlay"></div>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="gym-home-content text-center text-white">
-                                                    <h4 class="gym-home-subtitle text-uppercase letter-spacing_2">Petram Oil & Gas</h4>
-                                                    <h4 class="gym-home-title text-uppercase mt-4 letter-spacing_6">Shape Yourself</h4>
-                                                    <p class="startup-home-desc f-16 mt-4 mx-auto mb-0">Pleasure rationally encounter in consequences that are extremely painful again pursues loves desires obtain because pain.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- END GYM-HOME -->
+    </section><!-- #section -->
 
     <!-- START ABOUT -->
     <section class="section" id="about">
@@ -182,8 +127,13 @@
                 </div>
 
                 <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
-                    <div class="interior-about-img">
-                        <img src="images/background/bg-3.jpg" class="img-fluid" alt="">
+                    <!-- 
+                    data-wow-duration: Determinar la duración de la animación
+                    data-wow-delay: Retraso antes de que inicie la animación
+                    data-wow-offset: Distancia para iniciar la animación (relacionado a la parte de abajo del Browser)
+                    data-wow-iteration: numero de veces que se repite la animación -->
+                    <div class="wow animated fadeInRight" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10">
+                        <img src="images/background/bg-3.jpg" class="img-fluid " alt="">
                     </div>
                 </div>
             </div>
@@ -203,8 +153,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="home-title text-center">
-                        <h2 class="home-title-title letter-spacing_4 text-uppercase">Our Services</h2>
-                        <p class="home-title-desc text-muted mt-4">We have integrated a comprehensive Geo-science data integration approach that has applications in all phases of the Exploration and Production lifecycle.</p>
+                        <h2 class="home-title-title letter-spacing_4 text-uppercase wow animated fadeInDown"  data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10">Our Services</h2>
+                        <p class="home-title-desc text-muted mt-4  wow animated fadeInDown"  data-wow-duration="2s" data-wow-delay="1.5s" data-wow-offset="10">We have integrated a comprehensive Geo-science data integration approach that has applications in all phases of the Exploration and Production lifecycle.</p>
                     </div>
                 </div>
             </div>
@@ -347,8 +297,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="home-title text-center">
-                        <h2 class="home-title-title letter-spacing_4 text-uppercase">Our Projects</h2>
-                        <p class="home-title-desc text-muted mt-4">Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam.</p>
+                        <h2 class="home-title-title letter-spacing_4 text-uppercase  wow animated fadeInDown"  data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="10">Our Projects</h2>
+                        <p class="home-title-desc text-muted mt-4 wow animated fadeInDown"  data-wow-duration="2s" data-wow-delay="1.5s" data-wow-offset="10">Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam.</p>
                     </div>
                 </div>
             </div>
@@ -460,93 +410,6 @@
     </section>
     <!-- END WORK -->
 
-    <hr>
-
-    <!-- START VIDEO -->
-    <section class="section app-bg-video">
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="app-video-box text-center text-white">
-                        <h2 class="app-video-title text-uppercase">Watch Video </h2>
-                        <p class="app-video-desc f-17 mx-auto mt-4">Petram Oil and Gas is a leading North American oil and gas operator that is focused on developing its portfolio of oil reserves.
-                                We apply innovative dynamic reservoir modeling for evaluating oil recovery factors and optimizing drilling programs.</p>
-
-                        <div class="mt-5 app-video-icon">
-                            <a href="https://vimeo.com/316299998" class="video-play-icon-trigger">
-                                <i class="pe-7s-play text-white"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END VIDEO -->
-
-    <!-- START TEAM -->
-    <section class="section" id="team">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="home-title text-center">
-                        <h2 class="home-title-title letter-spacing_4 text-uppercase">Management Team</h2>
-                        <p class="home-title-desc text-muted mt-4">Pellentesque habitant morbi tristique senectus malesuada fames turpis egestas duis dignissim finibus commodo nibh malesuada sollis diam.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5 pt-3">
-                <div class="col-lg-6">
-                    <div class="team p-4 text-center mt-4">
-                        <div class="agency-team-img">
-                            <img src="images/users/user-1.jpg" class="img-fluid rounded-circle" alt="">
-                        </div>
-                        <h5 class="mt-4 text-uppercase letter-spacing_2 f-15 turquesa text-bold"><strong>Rayner Díaz</strong></h5>
-                        <p class="text-muted f-13 text-uppercase">Chief Executive Officer / Founder</p>
-                        <p class="text-muted mb-0">Accomplished Drilling Engineer from Oklahoma State University Drilling School with 21 years of experience as Field Engineer</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="team p-4 text-center mt-4">
-                        <div class="agency-team-img">
-                            <img src="images/users/user-2.jpg" class="img-fluid rounded-circle" alt="">
-                        </div>
-                        <h5 class="mt-4 text-uppercase letter-spacing_2 f-15 turquesa"><strong>Andrey Ortega</strong></h5>
-                        <p class="text-muted f-13 text-uppercase">Chief Operating Officer</p>
-                        <p class="text-muted mb-0">He specialized in the area of multi-component multi-azimuth seismic data processing and its applications to fractured reservoir characterization.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5 pt-3">
-                <div class="col-lg-6">
-                    <div class="team p-4 text-center mt-4">
-                        <div class="agency-team-img">
-                            <img src="images/users/user-3.jpg" class="img-fluid rounded-circle" alt="">
-                        </div>
-                        <h5 class="mt-4 text-uppercase letter-spacing_2 f-15 turquesa"><strong>Eduardo Sacco</strong></h5>
-                        <p class="text-muted f-13 text-uppercase">Chief Financial Officer</p>
-                        <p class="text-muted mb-0">Accomplished Drilling Engineer from Oklahoma State University Drilling School with 21 years of experience as Field Engineer</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="team p-4 text-center mt-4">
-                        <div class="agency-team-img">
-                            <img src="images/users/user-3.jpg" class="img-fluid rounded-circle" alt="">
-                        </div>
-                        <h5 class="mt-4 text-uppercase letter-spacing_2 f-15 turquesa"><strong>Erich Croes</strong></h5>
-                        <p class="text-muted f-13 text-uppercase">Chief executive officer / Director</p>
-                        <p class="text-muted mb-0">Develop and execute annual sales plans and strategies for North America South America Brazil, Colombia, Ecuador.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END TEAM -->
-
     <img src="images/broche.png" alt="" class="w-100 d-block d-md-none">
     <img 
     src="images/broche_1.svg" 
@@ -563,7 +426,7 @@
                     </div>
                     <div class="custom-form mt-4">
                         <div id="message"></div>
-                        <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                        <form id="ajax-contact" method="post" action="mailer.php">
 
                             <div class="row">
                                 <div class="col-lg-6">
@@ -611,7 +474,7 @@
                                 <div class="col-lg-12">
                                     <div class="mt-2">
                                         <input type="submit" id="submit" name="send" class="submitBnt btn btn-md btn-dark-custom" value="Send Message">
-                                        <div id="simple-msg"></div>
+                                        <div id="form-messages"></div>
                                     </div>
                                 </div>
                             </div>
@@ -689,7 +552,13 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
 
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+
     <script src="js/app.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 </html>
