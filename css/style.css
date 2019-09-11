@@ -2300,7 +2300,7 @@ textarea.form-control {
 /*------ BUSINESS COUNTER ------*/
 
 .business-bg-counter {
-    background: url(../images/blog/blog-2.jpg);
+    background: url(../images/works/wallpaper3.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -2996,7 +2996,7 @@ textarea.form-control {
 /*------ APP-VIDEO------*/
 
 .app-bg-video {
-    background: url(../images//works/wallpaper4.jpg);
+    background: #1d998b;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -3471,22 +3471,47 @@ textarea.form-control {
 }
 
 #video-landing {
-	height: 100vh;
+  height: 100vh;
   position: relative;
-  overflow-y: hidden;
   color: white;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 #video-landing video {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
-#video-landing h1{
- 	font-size: 3em; 
+#video-landing .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  #video-landing .overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: #1d998b;
+opacity: 0.5;
+z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    #video-landing {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
 }

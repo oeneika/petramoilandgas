@@ -15,6 +15,7 @@
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -93,8 +94,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="home-title text-center">
-                        <h2 class="home-title-title letter-spacing_4 text-uppercase">Who we are</h2>
-                        <p class="home-title-desc text-muted mt-4">Founded in 2016, Petram is an independent Oil and Gas company focused on increasing production and developing its portfolio of oil reserves in one of the most wanted field oil geographically distributed over an area of 425 acres in Texas.</p>
+                        <h2 class="home-title-title letter-spacing_4 text-uppercase wow animated fadeIn" data-wow-duration="2s" data-wow-offset="10" >Who we are</h2>
+                        <p class="home-title-desc text-muted mt-4 wow animated fadeIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10">Founded in 2016, Petram is an independent Oil and Gas company focused on increasing production and developing its portfolio of oil reserves in one of the most wanted field oil geographically distributed over an area of 425 acres in Texas.</p>
                     </div>
                 </div>
             </div>
@@ -108,7 +109,7 @@
                 </div>
 
                 <div class="col-lg-5 mt-5 mt-lg-0">
-                    <div class="agency-about-skill">
+                    <div class="agency-about-skill wow animated fadeInRight" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10">
                         <img src="images/background/bg-3.jpg" class="w-100" alt="">
                     </div>
 
@@ -117,7 +118,7 @@
 
             <div class="row mt-5 pt-3 vertical-content">
                 <div class="col-lg-5">
-                    <div class="agency-about-skill">
+                    <div class="agency-about-skill wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10">
                         <img src="images/background/bg-3.jpg" class="w-100" alt="">
                     </div>
 
@@ -178,8 +179,22 @@
     <!-- isotope filter plugin -->
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
 
     <script src="js/app.js"></script>
+
+    <script>
+        wow = new WOW(
+            {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       false,       // default
+            live:         true        // default
+            }
+        )
+        wow.init();
+    </script>
 
 </body>
 
