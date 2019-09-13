@@ -3529,3 +3529,35 @@ z-index: 1;
 .visibility{
     display: block;
 }
+
+.barra-negra{
+    padding: 10px 0;
+    background: black;
+}
+
+.redes{
+    color: white;
+    font-size: 16px;
+}
+
+.nav-sticky .navbar-nav li a i{
+    color: #1d998a!important;
+}
+
+.nombre-red{
+    display: inline-block;
+    color: #1d998a;
+    margin-left: 10px;
+}
+
+@media(min-width: 768px){
+    .nombre-red{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 200px){
+    .navbar-custom .navbar-nav li a i{
+        color: #1d998a!important;
+    }
+}

@@ -39,7 +39,6 @@
 </head>
 
 <body style="overflow-x: hidden;">
-
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
         <div class="container">
@@ -67,6 +66,15 @@
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link mr-0">Contact</a>
+                    </li>
+                    <li class="ml-0 ml-md-5">
+                        <a href="#contact" class="nav-link mr-0"><i class="mdi mdi-twitter redes"></i><span class="nombre-red">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link mr-0"><i class="mdi mdi-instagram redes"></i><span class="nombre-red">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link mr-0"><i class="mdi mdi-facebook redes"></i><span class="nombre-red">Facebook</span></a>
                     </li>
                 </ul>
             </div>
@@ -429,60 +437,54 @@
                 <div class="col-lg-8">
                     <div class="custom-form mt-4">
                         <div id="message"></div>
-                        <form id="contactForm" role="form">
-
+                        <form id="formulario" action="https://apipetramoilandgas.herokuapp.com//contact" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group mt-2">
-                                        <input name="name" id="name" type="text" class="form-control" placeholder="Your name">
+                                        <input name="name" type="text" class="form-control" placeholder="Your name" required autofocus title="Your name">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group mt-2">
-                                        <input name="country" id="country" type="text" class="form-control" placeholder="Country">
+                                        <input name="country" type="text" class="form-control" placeholder="Your country" required autofocus title="Your country">
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group mt-2">
-                                        <input name="email" id="email" type="email" class="form-control" placeholder="Your email">
+                                        <input name="email" type="email" class="form-control" placeholder="Your email" required autofocus title="Your email">
                                     </div>
                                 </div>
-
                                 <div class="col-lg-6">
                                     <div class="form-group mt-2">
-                                        <input name="phone" id="phone" type="number" class="form-control" placeholder="Phone Number">
+                                        <input name="phone" type="number" class="form-control" placeholder="Phone number" required autofocus title="Your number">
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group mt-2">
-                                        <input name="address" id="address" type="text" class="form-control" placeholder="Address">
+                                        <input name="address" type="text" class="form-control" placeholder="Address" required autofocus title="Your address">
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group mt-2">
-                                        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Your message"></textarea>
+                                        <textarea name="message" rows="5" class="form-control" placeholder="Your message" autofocus></textarea>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="mt-2">
-                                        <input type="submit" id="form-submit" name="send" class="submitBnt btn btn-md btn-dark-custom" value="Send Message">
-                                        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+                                        <input type="submit" id="btnEnviar" name="btnEnviar" class="submitBnt btn btn-md btn-dark-custom" value="Send Message">
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        <form>
+                        <p class="respuesta"></p>
                     </div>
                 </div>
             </div>
@@ -574,36 +576,54 @@
         )
         wow.init();
 
-        function submitForm(){
-            // Initiate Variables With Form Content
-            var name = $("#name").val();
-            var email = $("#email").val();
-            var message = $("#message").val();
-            var country = $("#country").val();
-            var phone = $("#phone").val();
-            var address = $("#address").val();
-            console.log(message);
-        
-            $.ajax({
-                type: "POST",
-                url: "https://apipetramoilandgas.herokuapp.com//contact",
-                data: "name=" + name + "&country=" + country + "&phone=" + phone + "&address=" + address + "&email=" + email + "&message=" + message,
-                success : function(text){
-                    console.log(text);
-                    if (text == 1){
-                        formSuccess();
+        $(document).ready(function () {
+            $("#formulario").bind("submit",function(){
+                event.preventDefault();
+                // Capturamnos el boton de envío
+                var btnEnviar = $("#btnEnviar");
+                $.ajax({
+                    type: $(this).attr("method"),
+                    url: $(this).attr("action"),
+                    data:$(this).serialize(),
+                    crossDomain: true,
+                    dataType: 'json',
+                    beforeSend: function(){
+                        /*
+                        * Esta función se ejecuta durante el envió de la petición al
+                        * servidor.
+                        * */
+                        // btnEnviar.text("Enviando"); Para button 
+                        btnEnviar.val("Sending"); // Para input de tipo button
+                        btnEnviar.attr("disabled","disabled");
+                    },
+                    complete:function(data){
+                        /*
+                        * Se ejecuta al termino de la petición
+                        * */
+                        btnEnviar.val("Send form");
+                        btnEnviar.removeAttr("disabled");
+                        console.log("Enviando formulario");
+                    },
+                    success: function(data){
+                        /*
+                        * Se ejecuta cuando termina la petición y esta ha sido
+                        * correcta
+                        * */
+                        $(".respuesta").html(data);
+                        console.log("Exito");
+                        console.log(data);
+                    },
+                    error: function(data){
+                        /*
+                        * Se ejecuta si la peticón ha sido erronea
+                        * */
+                        console.log("Problemas al tratar de enviar el formulario");
+                        $(".respuesta").html("Hubo un error");
                     }
-                }
+                });
+                // Nos permite cancelar el envio del formulario
+                return false;
             });
-        }
-        function formSuccess(){
-            $( "#msgSubmit" ).removeClass( "hidden" );
-        }
-
-        $("#contactForm").submit(function(event){
-            // cancels the form submission
-            event.preventDefault();
-            submitForm();
         });
     </script>
 
