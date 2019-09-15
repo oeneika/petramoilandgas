@@ -511,7 +511,7 @@ button:focus {
 }
 
 .home-title-desc {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     font-size: 15px;
 }
@@ -1968,8 +1968,8 @@ textarea.form-control {
 
 .book-services-box {
     border-left: 4px solid #1d998b;
-    padding: 30px 16px 30px 16px;
-    background: white;
+    padding: 15px;
+    background: rgba(255,255,255,0.4);;
     transition:all .3s ease-in-out;
 }
 
@@ -3548,6 +3548,10 @@ z-index: 1;
     display: inline-block;
     color: #1d998a;
     margin-left: 10px;
+}
+
+.bg-stratup-cta{
+    background-image: url("../images/works/obreros.jpg");
 }
 
 @media(min-width: 768px){
