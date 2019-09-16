@@ -272,7 +272,7 @@
             </div>
         </div>
     </section>
-    <!-- END ABOUT -->>
+    <!-- END ABOUT -->
 
     <!-- START CTA -->
     <section class="section bg-stratup-cta">
@@ -349,6 +349,11 @@
             }
         )
         wow.init();
+
+        $(document).ready(function () {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0;
+        });
     </script>
 
 </body>

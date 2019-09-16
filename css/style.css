@@ -24,7 +24,7 @@
 *****************************/
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     color: #323232;
     font-size: 14px;
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -3558,10 +3558,18 @@ z-index: 1;
     .nombre-red{
         display: none;
     }
+
+    .servicio{
+        text-align: left;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 200px){
     .navbar-custom .navbar-nav li a i{
         color: #1d998a!important;
+    }
+
+    .centrado-xs, .servicio{
+        text-align: center;
     }
 }
