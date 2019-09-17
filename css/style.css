@@ -3559,6 +3559,16 @@ z-index: 1;
     text-align-last: center;
 }
 
+.left-justified{
+    text-align: justify;
+    text-align-last: left;
+}
+
+.right-justified{
+    text-align: justify;
+    text-align-last: right;
+}
+
 @media(min-width: 768px){
     .nombre-red{
         display: none;
