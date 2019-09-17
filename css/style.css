@@ -3554,6 +3554,11 @@ z-index: 1;
     background-image: url("../images/works/obreros.jpg");
 }
 
+.center-justified{
+    text-align: justify;
+    text-align-last: center;
+}
+
 @media(min-width: 768px){
     .nombre-red{
         display: none;
