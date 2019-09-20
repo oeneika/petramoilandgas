@@ -1,0 +1,30 @@
+.center-justified{
+    text-align: justify!important;
+    text-align-last: center;
+}
+
+.left-justified{
+    text-align: justify!important;
+    text-align-last: left;
+}
+
+.right-justified{
+    text-align: justify!important;
+    text-align-last: right;
+}
+
+.index-browsers{
+    margin-top: 0;
+}
+
+.careers-perks h3.services, .careers-perks p.services{
+    width: 100%;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+@media (max-width: 767px){
+    .index-photography-cta{
+        height: 500px!important;
+    }
+}
