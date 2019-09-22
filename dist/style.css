@@ -23,6 +23,20 @@
     text-align: justify;
 }
 
+.icono{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@media (min-width: 768px){
+    .homepage-hero-content h2{
+        width: 900px;
+        margin: 0 auto;
+        font-size: 55px;
+    }
+}
+
+
 @media (max-width: 767px){
     .index-photography-cta{
         height: 500px!important;
