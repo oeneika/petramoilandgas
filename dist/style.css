@@ -81,6 +81,9 @@ form input.boton{
         margin: 0 auto;
         font-size: 55px;
     }
+    .index-mobile-call-to-action{
+        height: 400px;
+    }
 }
 
 
