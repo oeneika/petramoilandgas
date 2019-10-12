@@ -75,12 +75,9 @@
 
       <div class="homepage-hero-content">
         <h2 class="customFadeInUp">
-          We source, advise, explore, produce and provide services
-        </h2>
-        <p class="customFadeInUp">
-          for the oil and gas industry in a
+          We source, advise, explore, produce and provide services for the oil and gas industry in a
           comprehensive manner and on a global scale.
-        </p>
+        </h2>
 
         <a href="contact.html" class="boton customFadeInUp">
           Contact Us
@@ -91,7 +88,7 @@
 
   <div class="index-app-news">
     <div class="container">
-      <strong>We invest</strong>in technology and communities to bring the world better energy.</a>
+      <strong>Crude Oil Price Today is </strong><span id="price">$ </span></a>
     </div>
   </div>
 
@@ -358,6 +355,9 @@
           Petram Oil & Gas provides static and dynamic reservoir characterization, enhanced oil recovery (EOR), drilling optimization, exploration and production (E&P),
           and project finance advisory.
         </p>
+        <a href="services.html" class="boton float-left" data-animate="fadeInScale">
+         Know more about us
+        </a>
       </div>
     </div>
   </div>
@@ -436,6 +436,18 @@
           </div>
       </div>
   </footer>
+  <script>
+    var div = document.getElementById('price');
+    var f = new Date();
+    const url = 'https://api.oilpriceapi.com/v1/prices/latest';
+    const apiKey = '9bb6112f25f2bf3dc746433800f7cd1e'
+    const headers = {
+    'Authorization': 'Token 9bb6112f25f2bf3dc746433800f7cd1e',
+    'Content-Type': 'application/json'
+    }
+
+    fetch(url, { headers }).then(response => response.json()).then(price => div.innerHTML += price.data.price);
+  </script>
 
 </body>
 </html>

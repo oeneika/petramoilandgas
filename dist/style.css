@@ -75,14 +75,26 @@ form input.boton{
     transition: all .2s;
 }
 
+div.homepage-hero-module.header{
+    height: 500px;
+}
+
+div.homepage-hero-content.header{
+    top: calc(50% - 0px);
+}
+
+.index-mobile-call-to-action{
+    height: 440px;
+}
+
 @media (min-width: 768px){
     .homepage-hero-content h2{
         width: 900px;
         margin: 0 auto;
-        font-size: 55px;
+        font-size: 42px;
     }
     .index-mobile-call-to-action{
-        height: 400px;
+        height: 470px;
     }
 }
 
