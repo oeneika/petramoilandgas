@@ -15,3 +15,68 @@ background-image: url("../img/imagen7.jpg");
     content: none;
 }
 
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+    height: 100vh;
+}
+
+.homepage-hero-module .video-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+}
+
+.homepage-hero-module .video-container #video {
+    position: relative;
+    background: 0 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.homepage-hero-content {
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    top: calc(50% - 150px);
+}
+
+.parrafo-header{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.homepage-hero-content h2 {
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 44px;
+    color: white;
+}
+
+.butn.theme:hover {
+    color: white!important;
+}
+
+@media (min-width: 768px){
+    .homepage-hero-content h2 {
+        width: 900px;
+        margin: 0 auto;
+        line-height: 72px;
+        font-size: 72px;
+    }
+
+    .parrafo-header{
+        font-size: 16px;
+        margin-top: 30px;
+        width: 900px;
+        margin: 0 auto;
+    }
+}
