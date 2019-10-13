@@ -1,0 +1,13 @@
+.cover-background {
+background-image: url("../img/imagen7.jpg");
+}
+
+.background{
+    background-image: url("../img/imagen3.jpg");
+    background-size: cover;
+}
+
+.header{
+    color: white;
+}
+
