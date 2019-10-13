@@ -29,21 +29,3 @@
 
 /* == magnific-popup == */
 @import url("plugins/magnific-popup.css");
-
-/* == owl.carousel == */
-@import url("plugins/owl.carousel.css");
-
-/* == zoom css == */
-@import url("plugins/xzoom.css");
-        
-/* == default classes == */
-@import url("plugins/default.css");
-
-/* == navigation == */
-@import url("plugins/nav-menu.css");
-
-/* == contact form classes == */
-@import url("plugins/mailform.css");
-
-/* == prism css == */
-@import url("plugins/prism.css");

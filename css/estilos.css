@@ -11,3 +11,7 @@ background-image: url("../img/imagen7.jpg");
     color: white;
 }
 
+.list-style-5 li:before, .readmore:after{
+    content: none;
+}
+
