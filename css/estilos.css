@@ -1,5 +1,9 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .cover-background {
-background-image: url("../img/imagen7.jpg");
+    background-image: url("../img/imagen7.jpg");
 }
 
 .background{
@@ -63,6 +67,10 @@ background-image: url("../img/imagen7.jpg");
 
 .butn.theme:hover {
     color: white!important;
+}
+
+.list-style-5 li{
+    padding: 0 0 10px 0px;
 }
 
 @media (min-width: 768px){
