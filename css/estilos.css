@@ -21,6 +21,11 @@ body{
     background-size: cover;
 }
 
+.background-4{
+    background-image: url("../img/7.jpg");
+    background-size: cover;
+}
+
 .padding-53px{
     padding: 53px 0;
 }
@@ -28,6 +33,7 @@ body{
 .btn-primary{
     background: #1d998a;
     border: 0;
+    padding: 16px 24px;
 }
 
 .btn-primary:hover{
@@ -47,10 +53,27 @@ body{
     float:right;
 }
 
-    .boton:hover{
+.boton2{
+    width:42px;
+    height:42px;
+    background-color:rgb(216, 216, 216);
+    margin: 5px;
+    padding: 8px 10px 0 11px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    float:right;
+}
+
+    .boton:hover, .boton2:hover{
         opacity: 0.50;
         -moz-opacity: .50;
         filter:alpha (opacity=50);
+    }
+
+    .bg-verde{
+        background-color: #10695e;
     }
 
     .boton a{
