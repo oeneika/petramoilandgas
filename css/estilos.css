@@ -124,7 +124,7 @@ body{
     left: 0;
     right: 0;
     color: #fff;
-    top: calc(50% - 160px);
+    top: calc(50% - 30%);
 }
 
 .parrafo-header{
@@ -170,12 +170,44 @@ body{
     background-size: cover;
 }
 
+footer {
+    padding: 0px 0 0;
+    background: initial;
+    color: #939393;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+.footer-bar{
+    margin-top: 0;
+}
+
+.video-seccion{
+    height: 480px;
+}
+
+.homepage-hero-content.beta {
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    top: calc(50% - 20%);
+}
+
+.butn{
+    z-index: 500;
+}
+
 @media (min-width: 768px){
     .homepage-hero-content h2 {
-        width: 900px;
+        width: 1000px;
         margin: 0 auto;
-        line-height: 72px;
-        font-size: 55px;
+        line-height: 50px;
+        font-size: 40px;
     }
 
     .parrafo-header{
@@ -187,24 +219,9 @@ body{
 }
 
 @media screen and (min-width: 992px){
-    header.scrollHeader .navbar-default .navbar-nav>li>a{
-        color: black;
-    }
-
-    header{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 4px 20px rgba(0,0,0,0);
-    }
 
     .navbar-default{
         box-shadow: 0 4px 20px rgba(0,0,0,0);
-    }
-
-    .navbar-nav>li>a {
-        color: white;
     }
 
     .fixedHeader .navbar{
