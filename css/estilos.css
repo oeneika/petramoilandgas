@@ -234,6 +234,13 @@ body{
     -ms-transition: all .3s ease;
 }
 
+.navbar ul ul li{
+    margin: 5px 0 20px 0;
+}
+
+.navbar .sub-title{
+    margin-bottom: 15px;
+}
 
 @media (min-width: 768px){
     .homepage-hero-content h2 {
@@ -276,6 +283,6 @@ body{
     }
 
     .navbar-nav .megamenu{
-        width: auto;
+        width: 500px;
     }
 }
