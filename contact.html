@@ -86,16 +86,17 @@
         </header>
         <!-- end header section -->
 
-        <!-- start page title section -->
-        <section class="page-title-section2 bg-img cover-background" data-overlay-dark="3" data-background="img/6.jpg">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Contact</h1>
-                    </div>
+       <!-- start page title section -->
+       <section class="p-0 video-seccion" data-overlay-dark="2">
+            <div class="video-container">
+                <video autoplay muted loop id="video">
+                <source src="./video/down-time.mp4" type="video/mp4">
+                </video>
+                <div class="homepage-hero-content beta">
+                    <p class="wow fadeInUp titulo text-center">
+                        Contact
+                    </p>
                 </div>
-
             </div>
         </section>
         <!-- end page title section -->
@@ -103,6 +104,12 @@
         <!-- start advice form section -->
         <section>
             <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <h4>Contact Us</h4>
+                        <p>Petram Oil and Gas welcomes questions, comments and suggestions. The corporate headquarters contact information is:</p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 sm-margin-30px-bottom">
                         <div class="padding-30px-right sm-no-padding-right">
@@ -156,14 +163,29 @@
                             <form method="post" action="bat/rd-mailform.php" class="mailform off2">
                                 <input type="hidden" name="form-type" value="contact">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="text" name="name" placeholder="Your Name:" data-constraints="@LettersOnly @NotEmpty">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" placeholder="First Name:" data-constraints="@LettersOnly @NotEmpty">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="lastname" placeholder="Last Name:" data-constraints="@LettersOnly @NotEmpty">
                                     </div>
                                     <div class="col-md-6">
                                         <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
                                     </div>
                                     <div class="col-md-6">
                                         <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="city" placeholder="City:" data-constraints="@Phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="state" placeholder="State / Province / Region:" data-constraints="@Email @NotEmpty">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="postalcode" placeholder="Postal / Zip Code:" data-constraints="@Phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="country" placeholder="Country:" data-constraints="@Email @NotEmpty">
                                     </div>
                                     <div class="col-md-12">
                                         <textarea name="message" rows="5" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
@@ -180,15 +202,58 @@
         </section>
         <!-- end advice form section -->
     
-        <!-- start footer section -->
-        <footer>
+         <!-- start footer section -->
+         <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 sm-margin-30px-bottom">
+                        <h3 class="footer-title-style2 text-theme-color">Quick Links</h3>
+                        <div class="row">
+                            <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                                <ul class="footer-list xs-margin-5px-bottom">
+                                    <li><a href="javascript:void(0)">About us</a></li>
+                                    <li><a href="javascript:void(0)">Services</a></li>
+                                    <li><a href="javascript:void(0)">Locations</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                                <ul class="footer-list">
+                                    <li><a href="javascript:void(0)">Last Changes</a></li>
+                                    <li><a href="javascript:void(0)">Current Projects</a></li>
+                                    <li><a href="javascript:void(0)">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <h3 class="footer-title-style2 text-theme-color">Get in Touch</h3>
+                        <ul class="footer-list">
+                            <li>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">1400 Broadfield Blvd Suite 200 Houston, Texas 77084, USA</span>
+                            </li>
+                            <li>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left"><strong>Phone:</strong> +1 (281) 7405472</span>
+                            </li>
+                            <li>
+                                <span class="d-inline-block width-85 vertical-align-top padding-10px-left">
+                                    <img src="./img/facebook-logo2.png" alt="">
+                                    <img src="./img/instagram2.png" alt="" class="mx-3">
+                                    <img src="./img/twitter2.png" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
             <div class="footer-bar xs-font-size13">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <a href="javascript:void(0)" class="mx-3"><img src="img/facebook-logo2.png" alt="Facebook"></a>
-                            <a href="javascript:void(0)" class="mx-3"><img src="img/instagram2.png" alt="Instagram"></a>
-                            <a href="javascript:void(0)" class="mx-3"><img src="img/twitter2.png" alt="Twitter"></a>
+                        <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom">
+                            <p>&copy; Copyright Petram Oil and Gas 2019. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
