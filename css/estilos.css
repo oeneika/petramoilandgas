@@ -259,6 +259,11 @@ body{
     
 }
 
+@media screen and (max-width: 991px){
+
+}
+
+
 @media screen and (min-width: 992px){
 
     .navbar-default{
@@ -268,5 +273,9 @@ body{
 
     .navbar>ul>li.has-sub>a:after {
         border-color: transparent #1d998a #1d998a transparent;
+    }
+
+    .navbar-nav .megamenu{
+        width: auto;
     }
 }
