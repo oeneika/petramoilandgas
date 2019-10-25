@@ -103,7 +103,7 @@ body{
     border-right: none;
     border-left: none;
     position: relative;
-    height: 600px;
+    height: 100vh;
 }
 
 .homepage-hero-module .video-container {
@@ -118,7 +118,7 @@ body{
     background: 0 0;
     min-width: 100%;
     min-height: 100%;
-    filter: opacity(0.7);
+    filter: opacity(0.9);
 }
 
 .parrafo-header{
@@ -263,11 +263,13 @@ body{
         width: 920px;
         margin: 0 auto;
     }
+
+    .posicionamiento{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
     
-}
-
-@media screen and (max-width: 991px){
-
 }
 
 
@@ -284,5 +286,13 @@ body{
 
     .navbar-nav .megamenu{
         width: 500px;
+    }
+
+    .menu_area-light .container.linea{
+        border-bottom: 2px solid #1d998a;
+    }
+
+    .scrollHeader .container.linea{
+        border-bottom: 2px solid white;
     }
 }
