@@ -267,6 +267,10 @@ p.copyright{
 }
 
 @media (min-width: 768px){
+    .contenedor-about{
+        width: 700px;
+        margin: 0 auto;
+    }
     .homepage-hero-content h2 {
         width: 1000px;
         margin: 0 auto;
