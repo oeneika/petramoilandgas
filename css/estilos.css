@@ -12,8 +12,7 @@ body{
 }
 
 .background-2{
-    background-image: url("../img/4.jpg");
-    background-size: cover;
+background: #1d998a;
 }
 
 .background-3{
@@ -264,6 +263,25 @@ ul.ul-footer li a{
 
 p.copyright{
     color: white;
+}
+
+.service-simple-inner {
+    padding: 15px;
+}
+
+.inner-box{
+    border: 2px solid #1d998a;
+}
+
+.service-simple.beta{
+    box-shadow: initial;
+    -webkit-box-shadow: none;
+    border: 0;
+    
+}
+
+.padding-60{
+    padding: 60px 0;
 }
 
 @media (min-width: 768px){
