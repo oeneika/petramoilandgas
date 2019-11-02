@@ -293,6 +293,29 @@ p.copyright{
     padding: 30px 0;
 }
 
+.navbar-nav li a {
+    margin: 10px 0;
+}
+
+.titulo2{
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.Subtitulos-Servicios{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.Parrafos-Servicios{
+    text-align: justify;
+    color: #6d6e71;
+    margin-top: 10px;
+}
+
+
+
+
 @media (min-width: 768px){
     .contenedor-about{
         width: 700px;
@@ -308,14 +331,14 @@ p.copyright{
     .parrafo-header{
         font-size: 16px;
         margin-top: 30px;
-        width: 900px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .homepage-hero-content p{
         font-size: 36px;
         line-height: initial;
-        width: 920px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -329,9 +352,56 @@ p.copyright{
 
 
 @media screen and (min-width: 992px){
+    .layout_home .hero_ticker_body {
+        padding-right: 0;
+    }
+    .hero_ticker_body {
+        -ms-flex-align: end;
+        align-items: flex-end;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding: 10px 90px 12px 40px;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        margin-bottom: 15px;
+    }
+    .hero_ticker_body {
+        padding-right: 20px;
+    }
 
     .navbar-default{
         box-shadow: 0 4px 20px rgba(0,0,0,0);
+    }
+
+    .hero_ticker_data {
+        padding-right: 25px;
+    }
+
+    .hero_ticker_price {
+        font-size: 1.5rem;
+        margin-right: 4px;
+        font-weight: bold;
+    }
+
+    .hero_ticker_change.positive {
+        color: #63a945;
+        font-size: 18px;
+    }
+
+    .parrafo-header{
+        font-size: 16px;
+        margin-top: 30px;
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .homepage-hero-content p{
+        font-size: 36px;
+        line-height: initial;
+        width: 920px;
+        margin: 0 auto;
     }
     
 
@@ -366,5 +436,11 @@ p.copyright{
 
     .scrollHeader .container.linea{
         border-bottom: 2px solid white;
+    }
+}
+
+@media (max-width: 1300px){
+    .block-escritorio{
+        display: none;
     }
 }
