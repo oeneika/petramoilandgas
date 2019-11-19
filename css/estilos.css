@@ -269,6 +269,10 @@ p.copyright{
     padding: 15px;
 }
 
+.service-simple-inner-2{
+    padding: 15px 0;
+}
+
 .inner-box{
     border: 2px solid #1d998a;
 }
@@ -313,7 +317,9 @@ p.copyright{
     margin-top: 10px;
 }
 
-
+.section-heading.title-style5 .square{
+    margin-top: 20px;
+}
 
 
 @media (min-width: 768px){
@@ -431,7 +437,7 @@ p.copyright{
     }
 
     .menu_area-light .container.linea{
-        border-bottom: 6px solid #1d998a;
+        border-bottom: 2px solid #1d998a;
     }
 
     .scrollHeader .container.linea{
