@@ -321,6 +321,14 @@ p.copyright{
     margin-top: 20px;
 }
 
+.color-white{
+    color: white;
+}
+
+.inner-box-verdeclarito {
+    border: 2px solid #c6fff8;
+}
+
 
 @media (min-width: 768px){
     .contenedor-about{
