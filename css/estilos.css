@@ -169,8 +169,10 @@ background: #1d998a;
 }
 
 .video-seccion{
-    height: 480px;
+    height: 100vh;
 }
+
+
 
 .homepage-hero-content.beta {
     position: absolute;
@@ -329,12 +331,18 @@ p.copyright{
     border: 2px solid #c6fff8;
 }
 
+.titulo-franjaverde{
+    font-size: 30px;
+    line-height: 35px;
+}
+
 
 @media (min-width: 768px){
-    .contenedor-about{
-        width: 700px;
-        margin: 0 auto;
+    .titulo-franjaverde{
+        font-size: 34px;
+        line-height: 35px;
     }
+
     .homepage-hero-content h2 {
         width: 1000px;
         margin: 0 auto;
@@ -366,6 +374,11 @@ p.copyright{
 
 
 @media screen and (min-width: 992px){
+    .contenedor-about{
+        width: 800px;
+        margin: 0 auto;
+    }
+
     .layout_home .hero_ticker_body {
         padding-right: 0;
     }
