@@ -310,7 +310,7 @@ p.copyright{
 
 .Subtitulos-Servicios{
     font-size: 1.5rem;
-    color: #333;
+    color: #1d998a;
 }
 
 .Parrafos-Servicios{
@@ -336,11 +336,23 @@ p.copyright{
     line-height: 35px;
 }
 
+.padding-35px-all{
+    padding: 35px;
+}
+
 
 @media (min-width: 768px){
     .titulo-franjaverde{
         font-size: 34px;
         line-height: 35px;
+    }
+
+    .margin-especial{
+        padding: 10px 0 50px 0;
+    }
+
+    .padding-especial{
+        padding: 0px 0 90px 0;
     }
 
     .homepage-hero-content h2 {
