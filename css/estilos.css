@@ -188,6 +188,7 @@ background: #1d998a;
     z-index: 500;
 }
 
+
 .titulo{
     font-size: 36px;
     line-height: initial;
@@ -206,9 +207,13 @@ background: #1d998a;
 
 .homepage-hero-content p{
     width: 100%;
-    font-size: 28px;
+    font-size: 30px;
     text-align: justify;
-    padding: 0 20px;
+    padding: 0 30px;
+}
+
+.butn.small {
+    padding: 8px 20px;
 }
 
 .scroll-to-top {
@@ -310,6 +315,10 @@ p.copyright{
 .Subtitulos-Servicios{
     font-size: 1.5rem;
     color: #1d998a;
+}
+
+.service-simple h4{
+    margin-bottom: 15px;
 }
 
 .Parrafos-Servicios{

@@ -425,6 +425,18 @@
 
     <script>
     new WOW().init();
+
+    const url = 'https://api.oilpriceapi.com/v1/prices/past_day?by_code=WTI_USD'
+    const apiKey = 'dbefd3b53e846d16c5cb2d8ef60ccff1'
+    const headers = {
+    'Authorization': 'Token dbefd3b53e846d16c5cb2d8ef60ccff1',
+    'Content-Type': 'application/json'
+    }
+
+    fetch(url, { headers })
+    .then(response => response.json())
+    .then(price => console.log(price));
+
     </script>
 
     <!-- all js include end -->
