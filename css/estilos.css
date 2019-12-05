@@ -412,7 +412,7 @@ p.copyright{
         position: absolute;
         bottom: 0;
         z-index: 10;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     .hero_ticker_body {
         padding-right: 20px;
@@ -423,7 +423,7 @@ p.copyright{
     }
 
     .hero_ticker_data {
-        padding-right: 25px;
+        padding-right: 50px;
     }
 
     .hero_ticker_price {
