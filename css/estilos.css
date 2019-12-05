@@ -340,16 +340,62 @@ p.copyright{
 }
 
 .titulo-franjaverde{
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: normal;
 }
 
 .padding-35px-all{
     padding: 10px 20px;
 }
 
+.hero_ticker_body {
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    padding: 35px 90px 0px 40px;
+}
+.hero_ticker_body {
+    padding-right: 20px;
+}
+
+.hero_ticker_data {
+    padding-left: 40px;
+}
+
+.hero_ticker_price {
+    font-size: 1.5rem;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.hero_ticker_change.positive {
+    color: #63a945;
+    font-size: 18px;
+}
+
 
 @media (min-width: 768px){
+
+    .titulo-franjaverde{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .hero_ticker_body {
+        -ms-flex-align: end;
+        align-items: flex-end;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding: 10px 90px 12px 40px;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        margin-bottom: 25px;
+    }
+
     .titulo-franjaverde{
         font-size: 34px;
         line-height: 35px;
@@ -402,39 +448,9 @@ p.copyright{
     .layout_home .hero_ticker_body {
         padding-right: 0;
     }
-    .hero_ticker_body {
-        -ms-flex-align: end;
-        align-items: flex-end;
-        display: -ms-flexbox;
-        display: flex;
-        overflow: hidden;
-        padding: 10px 90px 12px 40px;
-        position: absolute;
-        bottom: 0;
-        z-index: 10;
-        margin-bottom: 25px;
-    }
-    .hero_ticker_body {
-        padding-right: 20px;
-    }
 
     .navbar-default{
         box-shadow: 0 4px 20px rgba(0,0,0,0);
-    }
-
-    .hero_ticker_data {
-        padding-left: 40px;
-    }
-
-    .hero_ticker_price {
-        font-size: 1.5rem;
-        margin-right: 4px;
-        font-weight: bold;
-    }
-
-    .hero_ticker_change.positive {
-        color: #63a945;
-        font-size: 18px;
     }
 
     .parrafo-header{
