@@ -163,47 +163,47 @@
                                 <h5 class="color-verde" style="font-size: 24px;">Let’s talk about business</h5>
                             </div>
 
-                            <form method="post" action="" class="mailform off2">
-                                <input type="hidden" name="form-type" value="contact">
+                            <form id="formulario" action="https://apipetramoilandgas.herokuapp.com//contact" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" name="name" placeholder="First Name:" data-constraints="@LettersOnly @NotEmpty">
+                                        <input type="text" name="first_name" placeholder="First Name:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="lastname" placeholder="Last Name:" data-constraints="@LettersOnly @NotEmpty">
+                                        <input type="text" name="last_name" placeholder="Last Name:" required autofocus>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="text" name="address" placeholder="Address:" data-constraints="@LettersOnly @NotEmpty">
+                                        <input type="text" name="address" placeholder="Address:" required autofocus>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="text" name="street-address" placeholder="Street Address:" data-constraints="@LettersOnly @NotEmpty">
+                                        <input type="text" name="street_address" placeholder="Street Address:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="phone" placeholder="Telephone:" data-constraints="@Phone">
+                                        <input type="text" name="phone" placeholder="Telephone:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="email" placeholder="Email:" data-constraints="@Email @NotEmpty">
+                                        <input type="text" name="email" placeholder="Email:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="city" placeholder="City:" data-constraints="@Phone">
+                                        <input type="text" name="city" placeholder="City:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="state" placeholder="State / Province / Region:" data-constraints="@Email @NotEmpty">
+                                        <input type="text" name="state" placeholder="State / Province / Region:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="postalcode" placeholder="Postal / Zip Code:" data-constraints="@Phone">
+                                        <input type="text" name="postal_code" placeholder="Postal / Zip Code:" required autofocus>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="country" placeholder="Country:" data-constraints="@Email @NotEmpty">
+                                        <input type="text" name="country" placeholder="Country:" required autofocus>
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea name="message" rows="4" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                                        <textarea name="message" rows="4" placeholder="Message:" required autofocus></textarea>
                                     </div>
                                     <div class="mfControls col-md-12">
                                         <button type="submit" class="butn theme">Submit</button>
                                     </div>
                                 </div>
                             </form>
+                            <p class="respuesta"></p>
                         </div>
                     </div>
                 </div>
@@ -297,6 +297,55 @@
 
     <script>
     new WOW().init();
+
+    $(document).ready(function () {
+        $("#formulario").bind("submit",function(){
+            event.preventDefault();
+            // Capturamnos el boton de envío
+            var btnEnviar = $("#btnEnviar");
+            $.ajax({
+                type: $(this).attr("method"),
+                url: $(this).attr("action"),
+                data:$(this).serialize(),
+                crossDomain: true,
+                dataType: 'json',
+                beforeSend: function(){
+                    /*
+                    * Esta función se ejecuta durante el envió de la petición al
+                    * servidor.
+                    * */
+                    // btnEnviar.text("Enviando"); Para button 
+                    btnEnviar.val("Sending"); // Para input de tipo button
+                    btnEnviar.attr("disabled","disabled");
+                },
+                complete:function(data){
+                    /*
+                    * Se ejecuta al termino de la petición
+                    * */
+                    btnEnviar.val("Send form");
+                    btnEnviar.removeAttr("disabled");
+                    console.log("Enviando formulario");
+                },
+                success: function(data){
+                    /*
+                    * Se ejecuta cuando termina la petición y esta ha sido
+                    * correcta
+                    * */
+                    $(".respuesta").html(data);
+                    location.reload();
+                },
+                error: function(data){
+                    /*
+                    * Se ejecuta si la peticón ha sido erronea
+                    * */
+                    console.log("Problemas al tratar de enviar el formulario");
+                    $(".respuesta").html("Hubo un error");
+                }
+            });
+            // Nos permite cancelar el envio del formulario
+            return false;
+        });
+    });
     </script>
 
     <!-- all js include end -->
