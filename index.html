@@ -106,7 +106,7 @@
                         We source, advise, explore, produce and provide services for the oil and gas industry in a comprehensive manner and on a global scale.
                     </p>
 
-                    <a href="about-us.html" class="btn btn-primary theme m-5">
+                    <a href="about-us.html" class="wow fadeInUp btn btn-primary theme header">
                         Learn more <img src="img/flecha-blanca-derecha.png" alt="" style="width:16px">
                     </a>
                     </div>
@@ -116,21 +116,20 @@
 
             <div class="hero_ticker_body">
                 <div class="hero_ticker_data">
+                    <p id="fecha" class="m-0"></p>
                     <span class="hero_ticker_symbol">BRENT CRUDE</span>
                     <div class="hero_ticker_data_group">
                         <span class="hero_ticker_price" id="pricebrent"></span>
                     </div>
                 </div>
                 <div class="hero_ticker_data">
-                        <span class="hero_ticker_symbol">WTI</span>
-                        <div class="hero_ticker_data_group">
-                            <span class="hero_ticker_price" id="price"></span>
-                        </div>
+                    <span class="hero_ticker_symbol">WTI</span>
+                    <div class="hero_ticker_data_group">
+                        <span class="hero_ticker_price" id="price"></span>
                     </div>
+                </div>
             </div>
             <img src="./img/pest2.png" alt="" class="posicionamiento block-escritorio">
-            
-
         </div>
         <!-- end video slideshow  -->
 
@@ -207,9 +206,10 @@
                     <div class="row">
                         <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom">
                             <div class="titulo-footer d-inline-block"><p class="mr-4">Share on</p></div>
-                            <div class="d-inline-block"><img src="img/001-twitter.svg" alt="" style="height: 13px;"></div>
-                            <div class="d-inline-block"><img src="img/002-facebook-logo.svg" alt="" class="mx-4" style="height: 13px;"></div>
-                            <div class="d-inline-block"><img src="img/003-instagram.svg" alt="" style="height: 13px;"></div>
+                            <div class="d-inline-block"><img src="img/linkedin.svg" alt="" style="height: 13px;"></div>
+                            <div class="d-inline-block"><img src="img/youtube.svg" alt="" class="mx-4" style="height: 13px;"></div>
+                            <div class="d-inline-block"><img src="img/002-facebook-logo.svg" alt="" style="height: 13px;"></div>
+                            <div class="d-inline-block"><img src="img/003-instagram.svg" alt="" class="mx-4" style="height: 13px;"></div>
                         </div>
                     </div>
                 </div>
@@ -294,11 +294,17 @@
     }
     var price_brent = document.getElementById('pricebrent');
     var price_wti = document.getElementById('price');
+    var fecha = document.getElementById('fecha');
 
     fetch('https://api.oilpriceapi.com/v1/prices/latest?by_code=WTI_USD', { headers })
     .then(response => response.json())
-    .then(wti => price_wti.innerHTML += wti.data.formatted );
+    .then(wti => 
+    price_wti.innerHTML += wti.data.formatted);
 
+    fetch('https://api.oilpriceapi.com/v1/prices/latest?by_code=WTI_USD', { headers })
+    .then(response => response.json())
+    .then(wti =>
+    fecha.innerHTML += wti.data.created_at);
 
     fetch('https://api.oilpriceapi.com/v1/prices/latest', { headers })
     .then(resp => resp.json())

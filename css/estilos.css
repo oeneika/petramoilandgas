@@ -98,28 +98,6 @@ background: #1d998a;
     content: none;
 }
 
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-    height: 100vh;
-}
-
-.homepage-hero-module .video-container {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #111;
-}
-
-.homepage-hero-module .video-container #video {
-    position: relative;
-    background: 0 0;
-    min-width: 100%;
-    min-height: 100%;
-    filter: opacity(0.9);
-}
-
 .parrafo-header{
     font-size: 16px;
     margin-top: 30px;
@@ -193,23 +171,6 @@ background: #1d998a;
     font-size: 36px;
     line-height: initial;
     margin: 0 auto;
-}
-
-.homepage-hero-content{
-    position: absolute;
-    z-index: 99;
-    text-align: center;
-    left: 0;
-    right: 0;
-    color: #fff;
-    top: calc(50% - 20%);
-}
-
-.homepage-hero-content p{
-    width: 100%;
-    font-size: 30px;
-    text-align: justify;
-    padding: 0 30px;
 }
 
 .butn.small {
@@ -354,10 +315,7 @@ p.copyright{
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    padding: 35px 90px 0px 40px;
-}
-.hero_ticker_body {
-    padding-right: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .hero_ticker_data {
@@ -368,6 +326,7 @@ p.copyright{
     font-size: 1.5rem;
     margin-right: 4px;
     font-weight: bold;
+    color: #1d998a;
 }
 
 .hero_ticker_change.positive {
@@ -375,8 +334,72 @@ p.copyright{
     font-size: 18px;
 }
 
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+    height: 230px;
+}
+
+.homepage-hero-module .video-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.homepage-hero-module .video-container #video {
+    width: 100%;
+}
+
+.homepage-hero-content{
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    top: calc(50% - 10%);
+}
+
+.homepage-hero-content p{
+    width: 100%;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.btn.btn-primary.header {
+    padding: 8px 14px;
+    margin: 15px 0 0 0;
+    font-size: 13px;
+}
+
 
 @media (min-width: 768px){
+
+    .btn.btn-primary.header {
+        padding: 15px 25px;
+        margin: 35px 0;
+        font-size: 18px;
+    }
+
+    .homepage-hero-module {
+        height: 100vh;
+    }
+    
+    .homepage-hero-module .video-container #video {
+        position: relative;
+        background: 0 0;
+        min-width: 100%;
+        min-height: 100%;
+        filter: opacity(0.9);
+        width: auto;
+    }
+
+    .homepage-hero-content p{
+        font-size: 30px;
+        padding: 0 30px;
+    }
 
     .titulo-franjaverde{
         font-size: 30px;
@@ -389,11 +412,11 @@ p.copyright{
         display: -ms-flexbox;
         display: flex;
         overflow: hidden;
-        padding: 10px 90px 12px 40px;
+        padding: 0 20px;
         position: absolute;
         bottom: 0;
         z-index: 10;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 
     .titulo-franjaverde{
